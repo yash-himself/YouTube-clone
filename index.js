@@ -4,10 +4,16 @@ let videoContainer= document.getElementById("videoContainer");
 let apiObj =[];
 
 async function getData(){
-    let response = await fetch(url)
+   try {
+    let response = await fetch(url,{
+        method: "get"})
     let data = await response.json()
    const arr = data.items
    buildData(arr)
+    
+   } catch (error) {
+    alert( "unabe to fetch data ,"+ error.message)
+   }
 
 }
 
