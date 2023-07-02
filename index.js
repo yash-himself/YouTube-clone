@@ -56,7 +56,7 @@ function render(apiObj){
         videoCard.innerHTML=` <img onclick="infoShow('${item.videoId}')" class="thumbnail" src="${item.thumbnail}" alt="">
                             <div class="videoInfo">
                                 <img style="width: 40px; height: 40px;" src="icons/profileBlue.png" alt="..." class="dp">
-                                <div class="info">
+                                <div onclick="infoShow('${item.videoId}')" class="info">
                                     <p  id="title">${item.videoTitle}</p>
                                     <p class="channelName">${item.channelName} </p>
                                     <span>${item.viewCount} </span><span>&bullet;</span><span>${item.publishedAt} </span>
