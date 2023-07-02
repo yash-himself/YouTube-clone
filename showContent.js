@@ -1,5 +1,5 @@
 const BASE_URL_1 = "https://www.googleapis.com/youtube/v3";
-const API_KEY_1 = "AIzaSyB0nijAw0nOkDEX0aui5DU9rUqtaPe0nXE";
+const API_KEY_1 = "AIzaSyB5DSWuaRUJg-eTmANM4tA8Scauz4vtLSg";
 
 const video_container = document.getElementById("yt-video");
 const videoId = localStorage.getItem("videoId");
@@ -39,7 +39,7 @@ getComments();
 
 
 
-const newUrl =`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyB0nijAw0nOkDEX0aui5DU9rUqtaPe0nXE&maxResults=24`
+const newUrl =`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyB5DSWuaRUJg-eTmANM4tA8Scauz4vtLSg&maxResults=24`
 // AIzaSyB0nijAw0nOkDEX0aui5DU9rUqtaPe0nXE
 
 
