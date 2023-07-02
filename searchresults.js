@@ -3,7 +3,7 @@ let box =document.getElementById("results")
 const query = localStorage.getItem("searchTerm");
 
 async function Data(){
-  let response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=AIzaSyB0nijAw0nOkDEX0aui5DU9rUqtaPe0nXE`)
+  let response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=AIzaSyB5DSWuaRUJg-eTmANM4tA8Scauz4vtLSg`)
   let data = await response.json()
  const arr = data.items
  console.log(arr)
